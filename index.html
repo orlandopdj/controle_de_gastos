@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resets.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="buraco-negro.png" type="image/x-icon">
+    <title>Controle de Gastos</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="title">
+            <h1>Controle de Gastos</h1>
+        </header>
+        <section class="saldo">
+            <h2>SALDO ATUAL</h2>
+            <p id="saldo">R$ 0.00</p>
+        </section>
+        <section class="container_receita_despesas">
+            <article class="receita">
+                <h2>RECEITA</h2>
+                <p id="receita">+ R$0.00</p>
+            </article>
+            <hr>
+            <article class="despesas">
+                <h2>DESPESAS</h2>
+                <p id="despesas">- R$0.00</p>
+            </article>
+        </section>
+        <section class="container_transacoes">
+            <h2>Transações</h2>
+            <section class="transacoes">
+                <ul id="transacoesUl">
+
+                </ul>
+            </section>
+        </section>
+        <h2 class="title_transacao">Adicionar Transação</h2>
+        <form id="form" class="container_input">
+            <p>Nome</p>
+            <input id="texto" type="text" placeholder="Nome da transação">
+            <p>Valor <br> <small>{negativo - despesas, positivo - receita}</small></p>
+            <input id="valor" type="number" placeholder="Valor da transação">
+            <button class="add">Adicionar</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

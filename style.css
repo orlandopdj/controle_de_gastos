@@ -1,0 +1,198 @@
+.container {
+    background-color: rgb(179, 230, 255);
+    width: 520px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 5px 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+body{
+    background: linear-gradient(#b8d9ff,#52a3ff);
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.saldo {
+    margin-bottom: 8px;
+}
+
+.saldo h2 {
+    font-size: 0.9rem;
+}
+
+.saldo p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #005cc5;
+}
+
+hr {
+    border: 1px solid rgba(67, 66, 66, 0.285);
+    height: 40px;
+    width: 1px;
+    opacity: 0.5;
+}
+
+.container_receita_despesas {
+    background-color: #c4c4c444;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.receita {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.despesas {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.receita h2 {
+    font-size: 0.8rem;
+}
+
+.receita p {
+    font-size: 1.1rem;
+    color: #069625;
+    font-weight: 700;
+}
+
+.despesas h2 {
+    font-size: 0.8rem;
+}
+
+.despesas p {
+    font-size: 1.1rem;
+    color: #ff3535;
+    font-weight: 700;
+}
+
+.container_transacoes h2 {
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 8px 0;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-indent: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+li {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+li:hover button {
+    opacity: 1;
+}
+
+.negativo {
+    border-right: 5px solid #c0392b;
+}
+
+.positivo {
+    border-right: 5px solid #2ecc71;
+}
+
+.title_transacao {
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 8px 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-indent: 5px;
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.container_input p {
+    margin-bottom: 5px;
+}
+
+.container_input input {
+    margin-bottom: 5px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.add{
+    padding: 5px 20px;
+    width: 200px;
+    margin: 5px auto;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #23004f;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    border-radius: 2px;
+}
+
+.add:hover{
+    background-color: #d5b2ff;
+    color: #23004f;
+    font-weight: bold;
+    border: 1px solid #23004f;
+}
+
+@media (max-width: 500px) {
+    .delete-btn{
+        opacity: 1;
+        line-height: 18px;
+    }
+}
