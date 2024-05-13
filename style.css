@@ -43,7 +43,6 @@ hr {
     padding: 10px 15px;
     display: flex;
     justify-content: space-around;
-    width: 100%;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -83,7 +82,6 @@ hr {
 }
 
 .container_transacoes h2 {
-    width: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     padding: 8px 0;
     font-size: 14px;
@@ -137,7 +135,6 @@ li:hover button {
 }
 
 .title_transacao {
-    width: 100%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     padding: 8px 0;
     font-size: 14px;
@@ -195,4 +192,23 @@ input::placeholder {
         opacity: 1;
         line-height: 18px;
     }
+    .container{
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+    h1{
+        width: 90%;
+    }
+.container_input input{
+    width: 250px;
+}
+.container_receita_despesas{
+    width: 320px;
+}
+
+li{
+    width: 93%;
+    left: 6%;
+}
 }
